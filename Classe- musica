@@ -1,0 +1,23 @@
+public class Musica {
+    private String titulo;
+    private String artista;
+    private int duracao;
+
+    public void setMusica(String titulo, String artista, int duracao) {
+        this.titulo = titulo;
+        this.artista = artista;
+        this.duracao = duracao;
+    }
+
+    public void tocar() {
+        System.out.println("Tocando música: " + titulo + " de " + artista);
+    }
+
+    public void pausar() {
+        System.out.println("Música pausada");
+    }
+
+    public void parar() {
+        System.out.println("Música parada");
+    }
+}

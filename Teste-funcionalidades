@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        Contato contato1 = new Contato("Alice", "123-456-7890", "alice@example.com");
+        Contato contato2 = new Contato("Bob", "098-765-4321", "bob@example.com");
+
+        iPhone meuIPhone = new iPhone("iPhone 12", 128, "Preto");
+
+        meuIPhone.tocarMusica("Imagine", "John Lennon", 183);
+        meuIPhone.fazerChamada(contato1);
+        meuIPhone.navegarNaInternet("https://www.example.com");
+    }
+}

@@ -1,0 +1,17 @@
+public class Telefone {
+    private Contato contato;
+
+    public void iniciarChamada(Contato contato) {
+        this.contato = contato;
+        System.out.println("Iniciando chamada com " + contato.getNome());
+    }
+
+    public void encerrarChamada() {
+        System.out.println("Chamada encerrada");
+        this.contato = null;
+    }
+
+    public void receberChamada(Contato contato) {
+        System.out.println("Recebendo chamada de " + contato.getNome());
+    }
+}

@@ -1,0 +1,17 @@
+public class Internet {
+    private String url;
+
+    public void abrirPagina(String url) {
+        this.url = url;
+        System.out.println("Abrindo página: " + url);
+    }
+
+    public void fecharPagina() {
+        System.out.println("Página fechada");
+        this.url = "";
+    }
+
+    public void recarregarPagina() {
+        System.out.println("Recarregando página: " + url);
+    }
+}

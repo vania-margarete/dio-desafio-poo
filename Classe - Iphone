@@ -1,0 +1,30 @@
+public class iPhone {
+    private String modelo;
+    private int armazenamento;
+    private String cor;
+    private Musica musica;
+    private Telefone telefone;
+    private Internet internet;
+
+    public iPhone(String modelo, int armazenamento, String cor) {
+        this.modelo = modelo;
+        this.armazenamento = armazenamento;
+        this.cor = cor;
+        this.musica = new Musica();
+        this.telefone = new Telefone();
+        this.internet = new Internet();
+    }
+
+    public void tocarMusica(String titulo, String artista, int duracao) {
+        musica.setMusica(titulo, artista, duracao);
+        musica.tocar();
+    }
+
+    public void fazerChamada(Contato contato) {
+        telefone.iniciarChamada(contato);
+    }
+
+    public void navegarNaInternet(String url) {
+        internet.abrirPagina(url);
+    }
+}
